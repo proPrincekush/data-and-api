@@ -1,0 +1,4 @@
+/*height is compulsary for displaying map */
+#mapid { 
+    height: 380px;
+ }

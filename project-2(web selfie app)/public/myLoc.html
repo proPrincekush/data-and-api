@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data and Api</title>
+
+    <!-- leaflet css for mapping  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <h1>Where are You ?</h1>
+    <p>
+      longitude:  <span id="long"></span> &deg;<br>
+      latitude:  <span id="lat"></span>  &deg;
+    </p>
+
+    <form  id="form">
+      <input type="text" name="name" placeholder="enter your name" required>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="mapid"></div>
+
+
+
+
+
+
+  <!-- leaflet js -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script src="js/myLoc.js"></script>
+</body>
+</html>
