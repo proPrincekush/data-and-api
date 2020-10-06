@@ -11,7 +11,7 @@ db.loadDatabase();
 app.get("/api",(req,res)=>{
     db.find({},(err,userdata)=>{
         if(err){res.send(err)}
-        console.log(userdata);
+        // console.log(userdata);
         res.json({userdata});
     });
     
@@ -24,9 +24,7 @@ app.post("/api",(req,res)=>{
    console.log(req.body);
    res.json({
        status:"success",
-       name,
-       lat,
-       long
+       ...req.body
    })
 })
 
